@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hide-icon {
+    display: none;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 100px auto 1fr;
+    place-items: center;
+    height: 80px;
+    background-color: rgb(148, 148, 148);
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.sidenav-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.icon-container {
+    grid-column: 1/2;
+}
+
+.nav-container {
+    grid-column: 3/4;
+    ul {
+        list-style: none;
+    }
+    li {
+        display: inline-block;
+    }
+    a {
+        text-decoration: none;
+        padding: 0 20px;
+    }
+}
+
+.sidenav-container {
+    grid-column: 2/3;
+}
